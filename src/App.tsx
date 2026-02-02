@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { TeamBuilder } from './components/team/TeamBuilder';
 import { SettingsModal } from './components/settings/SettingsModal';
 import { Settings } from 'lucide-react';
