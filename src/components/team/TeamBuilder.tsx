@@ -12,8 +12,8 @@ export const TeamBuilder: React.FC = () => {
         <div className="max-w-6xl mx-auto w-full space-y-8">
 
             {/* Progression Control */}
-            <div className="bg-gray-800 rounded-xl p-4 flex items-center justify-between border border-gray-700 shadow-md">
-                <div className="flex items-center gap-6">
+            <div className="bg-gray-800 rounded-xl p-4 flex flex-col md:flex-row items-center justify-between gap-4 border border-gray-700 shadow-md">
+                <div className="flex items-center gap-6 w-full md:w-auto justify-between md:justify-start">
                     <div>
                         <h2 className="text-white font-bold text-lg">Your Journey</h2>
                         <p className="text-gray-400 text-sm">Badge Level: {badges}</p>
@@ -26,7 +26,7 @@ export const TeamBuilder: React.FC = () => {
                         Clear Unlocked
                     </button>
                 </div>
-                <div className="flex gap-2">
+                <div className="flex gap-2 flex-wrap justify-center md:justify-end">
                     {[0, 1, 2, 3, 4, 5, 6, 7, 8].map(b => (
                         <button
                             key={b}
